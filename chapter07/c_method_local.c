@@ -12,7 +12,8 @@
 int a =50;  // 전역변수: 어디서든 사용 가능!
 
 int main(void)  {
-    int b =2;
+    int a = 1, b = 2;
+    // 사용할 수 있는 변수가 2개 이상인 경우(a)에는 가장 가까운 변수가 사용 됨. 따라서 a는 1값이 사용 됨.
     int result;
     //int b = 5;   // Error(똑같은 이름 변수를 중복 선언 x)
     printf("덧셈: %d", sum(a, b));
